@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📋 Project Task Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <h1>📋 Project Task Dashboard</h1>
+    <p>Live tasks from Google Drive JSON</p>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search by name or ID…" />
+      <span id="last-updated"></span>
+    </div>
+    <div id="task-container" class="grid"></div>
+    <div id="empty" class="empty" hidden>No tasks found.</div>
+    <div id="error" class="error" hidden>Couldn’t load tasks. Please try again.</div>
+  </main>
+
+  <footer class="foot">
+    <small>Powered by GitHub Pages • Auto-refreshed</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
